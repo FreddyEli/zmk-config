@@ -11,8 +11,9 @@
 #define QWERTY  0
 #define COLEMAK 1
 #define LOWER   2
-#define RISE   3
+#define RISE    3
 #define TRES    4
+#define STENO   5
 
 &mt {
   //  flavor = "tap-preferred";
@@ -76,6 +77,23 @@
         
     };
 
+/ {
+    macros {
+        acentoa: acentoa {
+            label = "acentoa";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LBKT &kp a>
+                ;
+        };
+    };
+};
+
+
+
+
+
         keymap {
                 compatible = "zmk,keymap";
                 
@@ -124,5 +142,14 @@
 		>;
 		};	
         
+		stenoq_layer {
+		bindings = <
+		&trans&trans&trans&trans&trans&trans		&trans &trans   &trans   &trans  &trans
+		&kp acentoa&trans&trans&trans&trans&trans		&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
+		&trans&trans&trans&trans&trans&trans 		&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
+					 &trans &trans  					&trans &trans 
+		>;
+		};	
+
 	};
 };
