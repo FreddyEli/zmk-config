@@ -22,14 +22,11 @@
 
 / {
     macros {
-        acentoa: acentoa {
-            label = "acentoa";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp LBKT &kp A>
-                ;
-        };
+    ZMK_MACRO(acentoa,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LBKT &kp A>;
+    )
     };
 };
 
