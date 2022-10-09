@@ -139,9 +139,9 @@
         
 		stenoq_layer {
 		bindings = <
-		&trans&trans&trans&trans&trans&trans		&trans &trans   &trans   &trans  &trans
-		&kp acentoa &trans&trans&trans&trans&trans		&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
-		&trans&trans&trans&trans&trans&trans 		&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
+		&trans      &trans&trans&trans&trans&trans		&trans &trans   &trans   &trans  &trans
+		&acentoa &trans&trans&trans&trans&trans		&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
+		&trans      &trans&trans&trans&trans&trans 		&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
 					 &trans &trans  					&trans &trans 
 		>;
 		};	
