@@ -31,10 +31,10 @@
     ZMK_MACRO(acentoo, wait-ms = <30>; tap-ms = <40>;
         bindings = <&kp LBKT &kp O>;)
     ZMK_MACRO(acentou, wait-ms = <30>; tap-ms = <40>;
-        bindings = <&kp LBKT &kp O>;)
+        bindings = <&kp LBKT &kp U>;)
     ZMK_MACRO(diereisu, wait-ms = <30>; tap-ms = <40>;
         bindings = <&macro_press &kp LSHFT>
-                , <&kp LBKT &kp O>
+                , <&kp LBKT &kp U>
                 , <&macro_release &kp LSHFT>;)
     ZMK_MACRO(mcion, wait-ms = <30>; tap-ms = <40>;
         bindings = <&kp C &kp I &kp LBKT &kp O &kp N>;)
