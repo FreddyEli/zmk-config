@@ -36,6 +36,10 @@
         bindings = <&macro_press &kp LSHFT>
                 , <&kp LBKT &kp O>
                 , <&macro_release &kp LSHFT>;)
+    ZMK_MACRO(mcion, wait-ms = <30>; tap-ms = <40>;
+        bindings = <&kp C &kp I &kp LBKT &kp O &kp N>;)
+    ZMK_MACRO(mnon, wait-ms = <30>; tap-ms = <40>;
+        bindings = <&kp SCLN &kp LBKT &kp O &kp N>;)
 
     };
 };
@@ -74,7 +78,6 @@
             bindings = <&kp LGUI>;
         };
         
-        
            combo_rgui {
             timeout-ms = <50>;
             key-positions = <17 18>;
@@ -91,6 +94,12 @@
             key-positions = <0 9>;
             bindings = <&to QWERTY>;
             layers = <COLEMAK>;
+        };
+           combo_repeat {
+            timeout-ms = <50>;
+            key-positions = <13 16>;
+            bindings = <&key_repeat>;
+            layers = -1;
         };
 
         
@@ -146,7 +155,7 @@
         
 		stenoq_layer {
 		bindings = <
-		&acentoa &kp ATSN &acentoe  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
+		&acentoa &kp ATSN &acentoe  &kp DLLR  &kp PRCT    			&kp CRRT  &acentou &acentoi &acentoo &diereisu 
 		&acentoa &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
 		&trans   &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
 					 &trans &trans  					&trans &trans 
