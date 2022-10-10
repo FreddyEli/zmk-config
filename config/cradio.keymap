@@ -99,7 +99,6 @@
             timeout-ms = <50>;
             key-positions = <13 16>;
             bindings = <&key_repeat>;
-            layers = -1;
         };
 
         
