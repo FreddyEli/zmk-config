@@ -10,8 +10,8 @@
 
 #define QWERTY  0
 #define COLEMAK 1
-#define SYS	2
-#define ANDROID	3
+#define ANDROID	2
+#define SYS	3
 #define SYMBOLS 4
 #define KEYBO   5
 #define STENO   6
