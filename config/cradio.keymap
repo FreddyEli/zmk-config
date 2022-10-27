@@ -148,7 +148,7 @@
 		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
 		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
 		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP_ARROW  &kp RIGHT
-					  &kp LC(BKSP) &mo 4  				&kp SPC  &mo 3 
+					  &kp LC(BKSP) &mo KEYBO  			&kp SPC  &mo 3 
 		>;
 		};	
 		
