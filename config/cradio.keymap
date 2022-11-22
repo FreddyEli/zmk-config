@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define QWERTY  0
 #define COLEMAK 1
@@ -185,9 +186,9 @@
 
 		function7_layer {
 		bindings = <
-		&kp F14 &kp F4 &kp F5 &kp F6 &kp F11 			&trans &trans   &trans   &trans  &trans
-		&kp F15 &kp F1 &kp F2 &kp F3 &kp F12  			&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
-		&kp F16 &kp F7 &kp F8 &kp F9 &kp F13   			&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
+		&kp F14 &kp F4 &kp F5 &kp F6 &kp F11 			&trans &mkp LCLK      &mmv MOVE_UP   &mkp RCLK  &trans
+		&kp F15 &kp F1 &kp F2 &kp F3 &kp F12  			&trans &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans 
+		&kp F16 &kp F7 &kp F8 &kp F9 &kp F13   			&trans &kp PG_DN   &mkp LCLK  &trans &trans   
 					 &trans &trans  		&kp LGUI &trans 
 		>;
 		};	
@@ -196,11 +197,7 @@
 		bindings = <
 		&kp F14 &kp F4 &kp F5 &kp F6 &kp F11 			&kp PG_UP   &none    &kp UP   &none     &none
 		&kp F14 &kp F4 &kp F5 &kp F6 &kp F11 			&kp PG_DN   &kp LEFT &kp DOWN &kp RIGHT &none 
-		&kp F14 &kp F4 &kp F5 &kp F6 &kp F11 			&kp PG_UP   &none    &kp UP   &none     &none
-	/*	&kp F15 &kp F1 &kp F2 &kp F3 &kp F12  			&kp PG_DOWN &kp LEFT &kp DOWN &kp RIGHT &none 
-		&kp F14 &kp F4 &kp F5 &kp F6 &kp F11 			&kp PG_UP   &none    &kp UP   &none     &none
-		&kp F16 &kp F7 &kp F8 &kp F9 &kp F13   			&none       &none    &kp none &none     &none   
-	*/
+		&kp F14 &kp F4 &kp F5 &kp F6 &kp F11 			&kp PG_UP   &none    &kp UP   &none     &kp RET
 					 &trans &trans  		&kp LGUI &trans 
 		>;
 		};	
@@ -208,4 +205,12 @@
 	};
 };
 
-
+//		function7_layer {
+//		bindings = <
+//		&kp F14 &kp F4 &kp F5 &kp F6 &kp F11 			&trans &trans   &trans   &trans  &trans
+//		&kp F15 &kp F1 &kp F2 &kp F3 &kp F12  			&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
+//		&kp F16 &kp F7 &kp F8 &kp F9 &kp F13   			&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
+//					 &trans &trans  		&kp LGUI &trans 
+//		>;
+//		};	
+//
