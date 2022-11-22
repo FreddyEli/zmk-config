@@ -18,6 +18,7 @@
 #define STENO   6
 #define FUNC    7
 #define NAV     8
+#define MOUSE   9
 
 &mt {
   //  flavor = "tap-preferred";
@@ -113,6 +114,26 @@
             bindings = <&tog NAV>;
             layers = <QWERTY COLEMAK ARTSEY NAV>;
         };
+           combo_mouse {
+            timeout-ms = <50>;
+            key-positions = <6 17 8>;
+            bindings = <&tog NAV>;
+            layers = <QWERTY COLEMAK ARTSEY NAV>;
+        };
+           combo_queston1 {
+            timeout-ms = <50>;
+            key-positions = <6 16>;
+            bindings = <&kp UNDER>;
+            layers = <QWERTY COLEMAK ARTSEY>;
+        };
+           combo_queston2 {
+            timeout-ms = <50>;
+            key-positions = <6 16>;
+            bindings = <&kp LS(EQUAL)>;
+            layers = <QWERTY COLEMAK ARTSEY>;
+        };
+
+
 
         
     };
@@ -137,7 +158,6 @@
           				&lt SYMBOLS  BKSP &kp LGUI  		&sl STENO &lt SYS SPC 
 		>;
 		};
-
 
        		artsey2_layer {
 		bindings = <
@@ -166,7 +186,7 @@
 		>;
 		};	
 		
-		tri_layer {
+		KETBO5_layer {
 		bindings = <
 		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5 			&trans &trans   &trans   &trans  &trans
 		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  						&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
@@ -186,8 +206,8 @@
 
 		function7_layer {
 		bindings = <
-		&kp F14 &kp F4 &kp F5 &kp F6 &kp F11 			&trans &mkp LCLK      &mmv MOVE_UP   &mkp RCLK  &trans
-		&kp F15 &kp F1 &kp F2 &kp F3 &kp F12  			&trans &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans 
+		&kp F14 &kp F4 &kp F5 &kp F6 &kp F11 			&trans &mkp LCLK   &mmv MOVE_UP   &mkp RCLK  &trans
+		&kp F15 &kp F1 &kp F2 &kp F3 &kp F12  			&trans &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGTH &trans 
 		&kp F16 &kp F7 &kp F8 &kp F9 &kp F13   			&trans &kp PG_DN   &mkp LCLK  &trans &trans   
 					 &trans &trans  		&kp LGUI &trans 
 		>;
@@ -196,12 +216,20 @@
 		nav8_layer {
 		bindings = <
 		&kp F14 &kp F4 &kp F5 &kp F6 &kp F11 			&kp PG_UP   &none    &kp UP   &none     &none
-		&kp F14 &kp F4 &kp F5 &kp F6 &kp F11 			&kp PG_DN   &kp LEFT &kp DOWN &kp RIGHT &none 
-		&kp F14 &kp F4 &kp F5 &kp F6 &kp F11 			&kp PG_UP   &none    &kp UP   &none     &kp RET
+		&kp F15 &kp F1 &kp F2 &kp F3 &kp F12 			&kp PG_DN   &kp LEFT &kp DOWN &kp RIGHT &none 
+		&kp F16 &kp F7 &kp F8 &kp F9 &kp F13 			&kp PG_UP   &none    &kp UP   &none     &kp RET
 					 &trans &trans  		&kp LGUI &trans 
 		>;
 		};	
 
+		mouse9_layer {
+		bindings = <
+		&kp F14 &kp F4 &kp F5 &kp F6 &kp F11 			&trans &mkp LCLK   &mmv MOVE_UP   &mkp RCLK  &trans
+		&kp F15 &kp F1 &kp F2 &kp F3 &kp F12  			&trans &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGTH &trans 
+		&kp F16 &kp F7 &kp F8 &kp F9 &kp F13   			&trans &kp PG_DN   &mkp LCLK  &trans &trans   
+					 &trans &trans  		&kp LGUI &trans 
+		>;
+		};	
 	};
 };
 
