@@ -56,12 +56,16 @@
             key-positions = <10 11>;
             bindings = <&sk LSHIFT>;
         };
-	combo_esc {
+	combo_esc1 {
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-        
+	combo_esc2 {
+            timeout-ms = <50>;
+            key-positions = <3 6>;
+            bindings = <&kp ESC>;
+        };
          combo_tab {
             timeout-ms = <50>;
             key-positions = <23 26>;
@@ -120,6 +124,12 @@
             bindings = <&tog MOUSE>;
             layers = <QWERTY COLEMAK ARTSEY MOUSE>;
         };
+           combo_slash {
+            timeout-ms = <50>;
+            key-positions = <1 11>;
+            bindings = <&kp UNDER>;
+            layers = <QWERTY COLEMAK ARTSEY>;
+        };
            combo_queston1 {
             timeout-ms = <50>;
             key-positions = <6 16>;
@@ -129,6 +139,18 @@
            combo_queston2 {
             timeout-ms = <50>;
             key-positions = <3 13>;
+            bindings = <&kp EQUAL>;
+            layers = <QWERTY COLEMAK ARTSEY>;
+        };
+           combo_exq1 {
+            timeout-ms = <50>;
+            key-positions = <16 26>;
+            bindings = <&kp LS(N1)>;
+            layers = <QWERTY COLEMAK ARTSEY>;
+        };
+           combo_exq2 {
+            timeout-ms = <50>;
+            key-positions = <13 23>;
             bindings = <&kp LS(EQUAL)>;
             layers = <QWERTY COLEMAK ARTSEY>;
         };
@@ -138,9 +160,39 @@
             bindings = <&kp MINUS>;
             layers = <QWERTY COLEMAK ARTSEY>;
         };
+           combo_dmark {
+            timeout-ms = <50>;
+            key-positions = <7 17>;
+            bindings = <&kp LS(N2)>;
+            layers = <QWERTY COLEMAK ARTSEY>;
+        };
+           combo_par1 {
+            timeout-ms = <50>;
+            key-positions = <17 27>;
+            bindings = <&kp LS(N8)>;
+            layers = <QWERTY COLEMAK ARTSEY>;
+        };
+           combo_par2 {
+            timeout-ms = <50>;
+            key-positions = <12 22>;
+            bindings = <&kp LS(N9)>;
+            layers = <QWERTY COLEMAK ARTSEY>;
+        };
+           combo_may {
+            timeout-ms = <50>;
+            key-positions = <18 28>;
+            bindings = <&kp NUBS>;
+            layers = <QWERTY COLEMAK ARTSEY>;
+        };
+           combo_men {
+            timeout-ms = <50>;
+            key-positions = <11 21>;
+            bindings = <&kp LS(NUBS)>;
+            layers = <QWERTY COLEMAK ARTSEY>;
+        };
            combo_boot {
             timeout-ms = <50>;
-            key-positions = <0 1 5 15>;
+            key-positions = <0 10 3 13>;
             bindings = <&bootloader>;
             layers = <QWERTY COLEMAK ARTSEY>;
         };
