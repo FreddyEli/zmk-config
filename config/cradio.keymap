@@ -56,6 +56,11 @@
             key-positions = <10 11>;
             bindings = <&sk LSHIFT>;
         };
+	combo_pipe {
+            timeout-ms = <50>;
+            key-positions = <0 10>;
+            bindings = <&kp GRAVE>;
+        };
 	combo_esc1 {
             timeout-ms = <50>;
             key-positions = <0 1>;
@@ -225,8 +230,8 @@
 
        		artsey2_layer {
 		bindings = <
-		&kp Q &kp W &kp F &kp P &kp B 					&kp J &kp L  &kp U    &kp Y   &kp SCLN
-		&mt LSFT A &kp R &kp S &kp T &kp G 			        &kp M &kp N  &kp E    &kp I   &kp O
+		&kp S &kp T &kp R &kp A &kp B 					&kp J &kp L  &kp U    &kp Y   &kp SCLN
+		&kp O &kp I &kp Y &kp E &kp G 			        &kp M &kp N  &kp E    &kp I   &kp O
 		&mt LCTRL Z &mt LALT X &mt RALT C  &kp D &kp V		        &kp K &kp H  &mt RALT CMMA &mt LALT DOT &mt LCTRL RET
           				&lt SYMBOLS BKSP &kp LGUI  		&sl STENO &lt SYS SPC 
 		>;
@@ -261,8 +266,8 @@
         
 		stenoq_layer {
 		bindings = <
-		&acentoa &kp ATSN &acentoe  &kp DLLR  &kp PRCT    			&kp CRRT  &acentou &acentoi &acentoo &diereisu 
-		&acentoa &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &mcion   &mnon    &kp RBRC   &kp BKSP
+		&kp RA(Q) &kp ATSN &acentoe  &kp DLLR  &kp PRCT    			&kp CRRT  &acentou &acentoi &acentoo &diereisu 
+		&acentoa &kp QMARK  &kp FSLH  &kp COLN  &kp RA(RKBT) 			&kp MINUS &mcion   &mnon    &kp RBRC   &kp BKSP
 		&trans   &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
 					 &kp LSHIFT &sl FUNC  					&trans &trans 
 		>;
