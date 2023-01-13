@@ -267,7 +267,7 @@
 		stenoq_layer {
 		bindings = <
 		&kp RA(Q) &kp ATSN &acentoe  &kp DLLR  &kp PRCT    			&kp CRRT  &acentou &acentoi &acentoo &diereisu 
-		&acentoa &kp QMARK  &kp FSLH  &kp COLN  &kp RA(RKBT) 			&kp MINUS &mcion   &mnon    &kp RBRC   &kp BKSP
+		&acentoa &kp QMARK  &kp FSLH  &kp COLN  &kp RA(RBKT) 			&kp MINUS &mcion   &mnon    &kp RBRC   &kp BKSP
 		&trans   &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
 					 &kp LSHIFT &sl FUNC  					&trans &trans 
 		>;
